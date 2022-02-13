@@ -1,0 +1,1 @@
+gcc -Wall -g3 -fsanitize=address -pthread socket_server.c -o server
