@@ -1,0 +1,1 @@
+ssh -i ssh-chave-lucasm-sp.pem -o ServerAliveInterval=30 ubuntu@$1
