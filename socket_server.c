@@ -112,7 +112,7 @@ void *handle_client(void *arg){
 		}
 
 		int receive = recv(cli->sockfd, buff_out, BUFFER_SZ, 0);
-		printf("message received: %s \n", buff_out);
+		printf("message received: %s, len: %d \n", buff_out, strlen(buff_out));
 		if (receive > 0){
 			if(strlen(buff_out) > 0){
 				if (buff_out[0] == '/') { // is a command
